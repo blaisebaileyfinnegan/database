@@ -23,7 +23,7 @@ The entire program can be separated into the CLI, transactional, and database la
 
 The database itself is implemented using an hash table (JS object with null prototype) for
 fast lookup. Value cardinality is maintained in the same style by using another hash table
-with the values as keys (CPU-memory tradeoff).
+with the values as keys (Space-time tradeoff).
 
 The transactional layer sits on top of the database and lazily remembers previous values.
 It does not copy the entire database as-is.
