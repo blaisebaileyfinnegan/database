@@ -4,9 +4,9 @@ Thumbtack Challenge #2
 Written in JavaScript
 
 ## Directory structure
-`/lib` - Parser, Transactional layer, and Database
-`/spec` - Unit Tests
-`app.js` - Runner
+`/lib` - Parser, Transactional layer, and Database  
+`/spec` - Unit Tests  
+`app.js` - Runner  
 
 ## Dependencies
 - Node.js >= 0.10
