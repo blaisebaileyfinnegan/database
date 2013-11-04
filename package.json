@@ -9,7 +9,6 @@
   "author": "Michael Vu",
   "license": "BSD-2-Clause",
   "devDependencies": {
-    "mocha": "~1.14.0",
     "jasmine-node": "~1.11.0"
   }
 }
