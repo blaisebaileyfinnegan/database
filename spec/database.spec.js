@@ -71,6 +71,17 @@ describe('In-memory database', function() {
 
         database.unset('3');
         expect(database.numEqualTo('bagel')).toBe(2);
+
+        database.set('1', 'notBagel');
+        expect(database.numEqualTo('bagel')).toBe(1);
+
+        database.set('1', 'bagel');
+        expect(database.numEqualTo('bagel')).toBe(2);
+        expect(database.numEqualTo('notBagel')).toBe(0);
+
+        database.set('1', 'noweewa');
+        database.set('2', 'fewafaio');
+        expect(database.numEqualTo('bagel')).toBe(0);
       });
     });
   });
